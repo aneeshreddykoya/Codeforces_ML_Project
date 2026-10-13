@@ -51,4 +51,4 @@ def fetch_user_submissions(handle):
 if __name__ == "__main__":
     init_db()
     # Uncomment below to test fetching
-    # fetch_user_submissions("tourist")
+    fetch_user_submissions("tourist")
