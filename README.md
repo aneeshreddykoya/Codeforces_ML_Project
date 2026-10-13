@@ -28,7 +28,7 @@ python data_fetcher.py
 ### 4. Start the Web Server
 Launch the FastAPI backend:
 ```bash
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
 ```
 
 ### 5. View Your A/B Testing Results
