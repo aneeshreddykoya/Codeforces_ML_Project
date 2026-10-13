@@ -8,7 +8,7 @@ import scipy.stats as stats
 app = FastAPI(title="Codeforces ML Recommender API")
 
 # Attempt to load C++ DLL for Windows acceleration
-dll_path = os.path.join(os.path.dirname(__file__), 'similarity.dll')
+dll_path = os.path.join(os.path.dirname(__file__), 'similarity.so')
 try:
     cpp_sim = ctypes.CDLL(dll_path)
     cpp_sim.cosine_similarity_c.argtypes = [
